@@ -1,5 +1,6 @@
 # SPRING DB2
 - 인프런 김영한님의 스프링 DB2를 복습하며 정리하는 리포지토리입니다.
+- Master Branch 코드 참고
 
 
 ## 22.05.30
@@ -10,3 +11,7 @@
 
 ## 22.06.12
 - (강의) JdbcTemplate 이름 지정 파라미터
+
+## 22.06.13
+- (강의) JdbcTemplate 이름 지정 파라미터 / SimpleJdbcInsert 수강 
+- (정리) JdbcTemplate 정리 (https://ojt90902.tistory.com/923)
