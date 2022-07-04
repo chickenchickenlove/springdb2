@@ -15,3 +15,7 @@
 ## 22.06.13
 - (강의) JdbcTemplate 이름 지정 파라미터 / SimpleJdbcInsert 수강 
 - (정리) JdbcTemplate 정리 (https://ojt90902.tistory.com/923)
+
+## 22.07.04
+- (강의) 데이터 접근 기술 - 테스트 관련 강의 수강
+- (정리) 데이터 접근 기술 - 테스트 관련 강의 정리(https://ojt90902.tistory.com/924)
