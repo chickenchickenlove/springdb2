@@ -23,3 +23,4 @@
 
 ## 22.07.08
 - (강의) 데이터 접근 기술 - MyBatis 
+- (정리) 데이터 접근 기술 - MyBatis 정리 (https://ojt90902.tistory.com/925)
