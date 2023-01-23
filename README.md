@@ -29,3 +29,4 @@
 - Chapter1 브랜치 (JdbcTemplate) 생성 및 코드 작성
 - Chapter2 브랜치 (DB Test) 생성 및 코드 작성
 - Chapter3 브랜치 (MyBatis) 생성 및 코드 작성
+- Chapter4 브랜치 (JPA) 생성 및 코드 작성
