@@ -24,3 +24,8 @@
 ## 22.07.08
 - (강의) 데이터 접근 기술 - MyBatis 
 - (정리) 데이터 접근 기술 - MyBatis 정리 (https://ojt90902.tistory.com/925)
+
+## 23.01.23
+- Chapter1 브랜치 (JdbcTemplate) 생성 및 코드 작성
+- Chapter2 브랜치 (DB Test) 생성 및 코드 작성
+- Chapter3 브랜치 (MyBatis) 생성 및 코드 작성
