@@ -7,31 +7,21 @@
 - 데이터 접근 기술 - Test 정리 (https://ojt90902.tistory.com/924)
 - 데이터 접근 기술 - MyBatis 정리 (https://ojt90902.tistory.com/925)
 - 데이터 접근 기술 - JPA 정리 (https://ojt90902.tistory.com/1311)
-
-## 22.05.30
-- (강의) 데이터 접근 기술 시작 (데이터 접근 기술 진행 방식 / 프로젝트 설정과 메모리 저장소 / 프로젝트 구조 설명 / 데이터베이스 테이블 생성)
-
-## 22.06.11
-- (강의) JDBC 사용방법
-
-## 22.06.12
-- (강의) JdbcTemplate 이름 지정 파라미터
-
-## 22.06.13
-- (강의) JdbcTemplate 이름 지정 파라미터 / SimpleJdbcInsert 수강 
-- (정리) JdbcTemplate 정리 (https://ojt90902.tistory.com/923)
-
-## 22.07.04
-- (강의) 데이터 접근 기술 - 테스트 관련 강의 수강
-- (정리) 데이터 접근 기술 - 테스트 관련 강의 정리(https://ojt90902.tistory.com/924)
+- 데이터 접근 기술 - Spring Data JPA 정리(https://ojt90902.tistory.com/1312)
 
 
-## 22.07.08
-- (강의) 데이터 접근 기술 - MyBatis 
-- (정리) 데이터 접근 기술 - MyBatis 정리 (https://ojt90902.tistory.com/925)
-
-## 23.01.23
-- Chapter1 브랜치 (JdbcTemplate) 생성 및 코드 작성
-- Chapter2 브랜치 (DB Test) 생성 및 코드 작성
-- Chapter3 브랜치 (MyBatis) 생성 및 코드 작성
-- Chapter4 브랜치 (JPA) 생성 및 코드 작성
+## 각 챕터 간략 정리 (한계)
+- `JdbcTemplate`
+  - SQL 기반으로 개발을 한다. RDBMS - 자바 객체의 패러다임 불일치에서 벗어날 수 없음.
+  - 패러다임 불일치 때문에 Repository 계층에서 Service 계층으로 데이터가 전송되어도, 어떤 범위까지의 데이터가 전달되었는지 알 수 없다. 따라서 Service 계층의 코드를 작성하기 위해 Repository 계층의 코드를 살펴봐야한다. 물리적으로 Repository / Service 계층은 분리되어있으나 논리적으로는 분리되어있지 않음. 
+  - 동적 쿼리 작성에 큰 문제가 존재한다.
+  - 모든 쿼리는 String을 기반으로 작성됨. → 디버깅의 어려움.
+- `DB Test`
+- `MyBatis`
+  - JdbcTemplate에서 반복되는 많은 코드를 줄여주지만 SQL 기반으로 개발한다. RDBMS - 자바 객체의 패러다임 불일치에서 벗어날 수 없음.
+  - 패러다임 불일치 때문에 Repository 계층에서 Service 계층으로 데이터가 전송되어도, 어떤 범위까지의 데이터가 전달되었는지 알 수 없다. 따라서 Service 계층의 코드를 작성하기 위해 Repository 계층의 코드를 살펴봐야한다. 물리적으로 Repository / Service 계층은 분리되어있으나 논리적으로는 분리되어있지 않음. 
+  - 동적쿼리 작성에서는 장점이 있다. 
+- `JPA`
+  - 반복성 단순 쿼리들이 많이 존재한다. findById()...
+  - 동적 쿼리 작성 시, 코드량이 많이 증가한다. 
+- `Spring Data JPA`
