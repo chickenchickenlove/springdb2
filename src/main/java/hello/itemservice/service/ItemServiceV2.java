@@ -28,8 +28,8 @@ public class ItemServiceV2 implements ItemService {
 
     @Override
     public void update(Long itemId, ItemUpdateDto updateParam) {
-        // 여기서 비즈니스 로직으로 업데이트 한다고 생각하면 됨.
         Item findItem = itemRepositoryV2.findById(itemId).orElseThrow();
+
         findItem.setItemName(updateParam.getItemName());
         findItem.setQuantity(updateParam.getQuantity());
         findItem.setPrice(updateParam.getPrice());
