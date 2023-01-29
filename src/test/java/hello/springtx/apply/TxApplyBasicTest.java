@@ -13,6 +13,11 @@ import org.springframework.transaction.support.TransactionSynchronizationManager
 
 import static org.assertj.core.api.Assertions.*;
 
+/**
+ * logging.level.org.springframework.transaction.interceptor=TRACE
+ * 위 로그를 추가하면 트랜잭션 시작 시점을 더 확인할 수 있음.
+ */
+
 @Slf4j
 @SpringBootTest
 public class TxApplyBasicTest {
@@ -20,6 +25,7 @@ public class TxApplyBasicTest {
     @Autowired
     BasicService basicService;
 
+    // 트랜잭션 AOP 클래스 생성 확인
     @Test
     void proxyCheck() {
         log.info("aop class = {}", basicService.getClass());
@@ -27,6 +33,7 @@ public class TxApplyBasicTest {
         assertThat(AopUtils.isAopProxy(basicService)).isTrue();
     }
 
+    // 트랜잭션 AOP 로그 확인
     @Test
     void txTest() {
         basicService.tx();
@@ -46,6 +53,7 @@ public class TxApplyBasicTest {
     @Slf4j
     static class BasicService {
 
+        // 트랜잭션 AOP 적용
         @Transactional
         public void tx() {
             log.info("call tx");
@@ -53,6 +61,7 @@ public class TxApplyBasicTest {
             log.info("tx active = {}", txActive);
         }
 
+        // 트랜잭션 AOP 미적용
         public void noTx() {
             log.info("call tx");
             boolean txActive = TransactionSynchronizationManager.isActualTransactionActive();
