@@ -11,7 +11,8 @@
 - 데이터 접근 기술 - QueryDSL JPA 정리(https://ojt90902.tistory.com/1313)
 - 데이터 접근 기술 - 활용 방안 정리(https://ojt90902.tistory.com/1315)
 - 데이터 접근 기술 - Spring Transaction 기본(https://ojt90902.tistory.com/1316)
-- 데이터 접근 기술 - Spring Transactino 전파 기본(https://ojt90902.tistory.com/1319)
+- 데이터 접근 기술 - Spring Transaction 전파 기본(https://ojt90902.tistory.com/1319)
+- 데이터 접근 기술 - Spring Transaction 전파 활용(https://ojt90902.tistory.com/1320)
 
 
 ## 각 챕터 간략 정리 (한계)
